@@ -94,7 +94,7 @@ class BinarySearchTree:
 			    current_node = current_node.left
 		    else:
 			    sub_tree_min = self.min_value(current_node.right)
-			    current_node.value = sub_tree_min
+                current_node.value = sub_tree_min
 			    current_node.right = self.__delete_node(current_node.right, sub_tree_min)
 	    return current_node
     
